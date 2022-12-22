@@ -113,6 +113,25 @@ String arr[][] = new String[15][15];
 						arr[n][m-1]=" ";
 					}
 				}
+				if(arr[n][m]=="0") {
+					
+					for(int i=0; i<20; i++) {
+						System.out.println();
+					}
+					System.out.println("\nFINISH! ");
+					System.out.println("\tSCORE:" +score);
+					break;
+				}
+				if(arr[n][m]=="#") {
+					
+					for(int i=0; i<20; i++) {
+						System.out.println();
+					}
+					System.out.println("\nGAME OVER! ");
+					System.out.println("\tSCORE:" +score);
+					
+					break;
+				}
 	}
 	}
 }
