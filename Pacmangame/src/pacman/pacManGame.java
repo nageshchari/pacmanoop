@@ -1,12 +1,15 @@
 package pacman;
 
+import java.util.Scanner;
+
 public class pacManGame {
 	public static void main(String[] args) {
-		
+		Scanner sc = new Scanner(System.in);		
 String arr[][] = new String[15][15];
 		
 		Integer x,y;
 		Integer n=2, m=2;
+		char move;
 		Integer score = 0;
 		
 		//STORAGE OF THE MAP
@@ -75,5 +78,41 @@ String arr[][] = new String[15][15];
 				}
 				System.out.println();
 			}
+			while(true) {
+				System.out.print("\nEnter a move: ");
+				move=sc.next().charAt(0);
+				
+				if (move=='s')
+				{
+					n++;
+					if(n>0) {
+						arr[n-1][m]=" ";
+					}
+				}
+				
+				if (move=='w')
+				{
+					n--;
+					if(n>0) {
+						arr[n+1][m]=" ";
+					}
+				}
+				
+				if (move=='a')
+				{
+					m--;
+					if(n>0) {
+						arr[n][m+1]=" ";
+					}
+				}
+				
+				if (move=='d')
+				{
+					m++;
+					if(n>0) {
+						arr[n][m-1]=" ";
+					}
+				}
+	}
 	}
 }
