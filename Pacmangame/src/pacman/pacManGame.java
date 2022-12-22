@@ -10,7 +10,7 @@ public class pacManGame {
 	  private int y;
 	  private Scanner sc;
 
-	  public map() {
+	  public pacManGame() {
 	    map = new String[h.getMAX()][h.getMAX()];
 	    sc = new Scanner(System.in);
 	    x = 2;

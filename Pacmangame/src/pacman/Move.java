@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Move {
 	Helper h = new Helper();
 	 Scanner sc = new Scanner(System.in);
-	 map m = new map();
+	 pacManGame m = new pacManGame();
 	 Integer x = 2;
 	 Integer y = 2;
 	 
