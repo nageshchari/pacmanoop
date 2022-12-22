@@ -132,6 +132,23 @@ String arr[][] = new String[15][15];
 					
 					break;
 				}
+				if(arr[n][m]==".") {
+					score+=1;
+				}
+
+
+				for(int i=0; i<20; i++) {
+					System.out.println();
+				}
+
+							arr[n][m]="@";
+							System.out.println("\tSCORE:" +score);
+							for(x=0;x<15;x++) {
+								for(y=0;y<15;y++) {
+									System.out.print(arr[x][y]+" ");
+								}
+								System.out.println();
+							}
 	}
 	}
 }
