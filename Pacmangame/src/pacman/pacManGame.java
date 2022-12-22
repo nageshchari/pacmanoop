@@ -6,6 +6,8 @@ public class pacManGame {
 String arr[][] = new String[15][15];
 		
 		Integer x,y;
+		Integer n=2, m=2;
+		Integer score = 0;
 		
 		//STORAGE OF THE MAP
 		
@@ -61,6 +63,17 @@ String arr[][] = new String[15][15];
 							arr[x][y]=".";
 						}
 						}
-					}
+					
+	}
+	
+	//PRINTING THE MAP
+			arr[n][m]="@";
+			System.out.println("\tSCORE:" +score);
+			for(x=0;x<15;x++) {
+				for(y=0;y<15;y++) {
+					System.out.print(arr[x][y]+" ");
+				}
+				System.out.println();
+			}
 	}
 }
