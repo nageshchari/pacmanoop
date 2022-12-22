@@ -42,6 +42,7 @@ public class Move {
 	        map[x][y - 1] = " ";
 	      }
 	    }
+	    //print map
 	    m.printMap();
 	    if (map[x][y] == "0") {
 	      for (int i = 0; i < 20; i++) {
