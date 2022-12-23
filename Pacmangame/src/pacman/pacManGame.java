@@ -46,6 +46,8 @@ public class pacManGame {
 	        	map[i][j] = "#";
 	        }else if(j == 15 && i > 10 && i < 16) {
 	        	map[i][j]= "#";
+	        }else if(i ==2 && j > 8 && j<16) {
+	        	map[i][j] = "#";
 	        }else {
 	          map[12][12] = "0";
 	          map[i][j] = ".";
